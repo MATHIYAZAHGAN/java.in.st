@@ -2,7 +2,7 @@
 
 public class st10 {
     public static void main (String args[]){
-        String s ="mathiyazahgan";
+        String s ="happy people";
         int b=1;
         int bb[]= new int [s.length()];
 
@@ -22,15 +22,13 @@ public class st10 {
                 bb[i]=b;
 
             }
+            b=0;
         }
-        for(int i=0;i<bb.length;i++){
-            // if(!(bb[i]>=1)){
-            //     System.out.print(s.charAt(i)+" ");
-            // }
-            System.out.println(bb[i]);
-
-           
-
+        for(int i=1;i<bb.length-1;i++){
+                if(bb[i]>0){
+                    System.out.print(s.charAt(i)+" ");
+                
+            }
         }
     }
 }
